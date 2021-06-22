@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchange Rate</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Currency Converter</h1>
+    </header>
+    <div class="wrapper">
+      <div class="select-from-block custom-select">
+        <label for="label-from">From</label>
+        <div class="select-label" id="label-from">
+          <p class="label">Select Currency</p>
+        </div>
+        <ul class="currencies from">
+
+          <div class="search-box">
+            <input id="search-from" type="text" placeholder="Search Currency...">
+          </div>
+
+          <li class="currency-from" id="AFN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/af.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AFN <br> Afghanistan Afghani</p>
+            </div>
+          </li>
+          <li class="currency-from" id="USD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/us.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">USD <br> US Dollar</p>
+            </div>
+          </li>
+          <li class="currency-from" id="ALL">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/al.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ALL <br> Albanian lek</p>
+            </div>
+          </li>
+          <li class="currency-from" id="ARS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ar.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ARS <br> Agentina Peso</p>
+            </div>
+          </li>
+          <li class="currency-from" id="AUD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/au.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AUD <br> Australia Dollar</p>
+            </div>
+          </li>
+          <li class="currency-from" id="AZN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/az.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AZN <br> Azerbaijan Manat</p>
+            </div>
+          </li>
+          <li class="currency-from" id="AWG">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/aw.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AWG <br> Aruba Guilder</p>
+            </div>
+          </li>
+          <li class="currency-from" id="AZN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/az.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AZN <br> Azerbaijan Manat</p>
+            </div>
+          </li>
+          <li class="currency-from" id="BRL">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/br.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">BRL <br> Brazil Real</p>
+            </div>
+          </li>
+          <li class="currency-from" id="BGN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/bg.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">BGN <br> Bulgaria Lev</p>
+            </div>
+          </li>
+          <li class="currency-from" id="KHR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kh.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KHR <br> Cambodia Riel</p>
+            </div>
+          </li>
+          <li class="currency-from" id="CAD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ca.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KAD <br> Canada Dollar</p>
+            </div>
+          </li>
+          <li class="currency-from" id="CNY">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/cn.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">CNY <br> Yuan Renminbi</p>
+            </div>
+          </li>
+          <li class="currency-from" id="COP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kh.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">COP <br> Colombia Peso</p>
+            </div>
+          </li>
+          <li class="currency-from" id="DKK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/dk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">DKK <br> Denmark Krone</p>
+            </div>
+          </li>
+          <li class="currency-from" id="EGP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/eg.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">EGP <br> Egypt Pound</p>
+            </div>
+          </li>
+          <li class="currency-from" id="EEK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ee.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">EEK <br> Estonia Kroon</p>
+            </div>
+          </li>
+          <li class="currency-from" id="EUR">
+            <div class="img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">EUR <br> Euro Member</p>
+            </div>
+          </li>
+          <li class="currency-from" id="FKP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/fk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">FKP <br> Falkland Islands Pound</p>
+            </div>
+          </li>
+          <li class="currency-from" id="GEL">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ge.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">GEL <br> Georgia Lari</p>
+            </div>
+          </li>
+          <li class="currency-from" id="GTG">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/gt.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">GTQ <br> Guatemala Quetzal</p>
+            </div>
+          </li>
+          <li class="currency-from" id="GGP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/gg.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">GGP <br> Guernsey Pound</p>
+            </div>
+          </li>
+          <li class="currency-from" id="HKD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/hk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">HKD <br> Hong Kong Dollar</p>
+            </div>
+          </li>
+          <li class="currency-from" id="HUF">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/hu.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">HUF <br> Hungary Forint</p>
+            </div>
+          </li>
+          <li class="currency-from" id="ISK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/is.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ISK <br> Iceland Krona</p>
+            </div>
+          </li>
+          <li class="currency-from" id="INR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/in.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">INR <br> India Rupee</p>
+            </div>
+          </li>
+          <li class="currency-from" id="IDR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/id.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">IDR <br> Indonesia Rupiah</p>
+            </div>
+          </li>
+          <li class="currency-from" id="IRR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ir.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">IRR <br> Iran Rial</p>
+            </div>
+          </li>
+          <li class="currency-from" id="ILS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/il.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ILS <br> Israel Shekel</p>
+            </div>
+          </li>
+          <li class="currency-from" id="JPY">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/jp.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">JPY <br> Japan Yen</p>
+            </div>
+          </li>
+          <li class="currency-from" id="KZT">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kz.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KZT <br> Kazakhstan Tenge</p>
+            </div>
+          </li>
+          <li class="currency-from" id="KPW">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kr.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KPW <br> Korea(North/South) Won</p>
+            </div>
+          </li>
+          <li class="currency-from" id="KGS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kg.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KGS <br> Kyrgyzstan</p>
+            </div>
+          </li>
+          <li class="currency-from" id="LBP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/lb.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">LBP <br> Lebanon Pound</p>
+            </div>
+          </li>
+          <li class="currency-from" id="MYR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/my.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">MYR <br> Malaysia Ringgit</p>
+            </div>
+          </li>
+          <li class="currency-from" id="MXN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/mx.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">MXN <br> Mexico Peso</p>
+            </div>
+          </li>
+          <li class="currency-from" id="MNT">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/mn.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">MNT <br> Mongolia Tughrik</p>
+            </div>
+          </li>
+          <li class="currency-from" id="NPR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/np.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">NPR <br> Nepal Rupee</p>
+            </div>
+          </li>
+          <li class="currency-from" id="NZD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/nz.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">NZD <br> New Zealand Dollar</p>
+            </div>
+          </li>
+          <li class="currency-from" id="NGN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ng.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">NGN <br> Nigeria Naira</p>
+            </div>
+          </li>
+          <li class="currency-from" id="NOK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/no.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">NOK <br> Norway Krone</p>
+            </div>
+          </li>
+          <li class="currency-from" id="OMR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/om.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">OMR <br> Oman Rial</p>
+            </div>
+          </li>
+          <li class="currency-from" id="PKR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/pk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">PKR <br> Pakistan Rupee</p>
+            </div>
+          </li>
+          <li class="currency-from" id="PAB">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/pa.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">PAB <br> Panama Balboa</p>
+            </div>
+          </li>
+          <li class="currency-from" id="PHP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ph.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">PHP <br> Philippines Peso</p>
+            </div>
+          </li>
+          <li class="currency-from" id="PLN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/pl.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">PLN <br> Poland Zloty</p>
+            </div>
+          </li>
+          <li class="currency-from" id="QAR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/qa.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">QAR <br> Qatar Riyal</p>
+            </div>
+          </li>
+          <li class="currency-from" id="RON">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ro.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">RON <br> Romania New Leu</p>
+            </div>
+          </li>
+          <li class="currency-from" id="RUB">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ru.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">RUB <br> Russia Buble</p>
+            </div>
+          </li>
+          <li class="currency-from" id="SAR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/sa.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">SAR <br> Saudi Arabia Riyal</p>
+            </div>
+          </li>
+          <li class="currency-from" id="RSD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/rs.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">RSD <br> Serbia Dinar</p>
+            </div>
+          </li>
+          <li class="currency-from" id="SOS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/so.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">SOS <br> Somalia Shilling</p>
+            </div>
+          </li>
+          <li class="currency-from" id="ZAR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/za.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ZAR <br> South Africa Rand</p>
+            </div>
+          </li>
+          <li class="currency-from" id="LKR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/lk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">LKR <br> Sri Lanka Rupee</p>
+            </div>
+          </li>
+          <li class="currency-from" id="SEK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/se.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">SEK <br> Sweden Krona</p>
+            </div>
+          </li>
+          <li class="currency-from" id="CHF">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ch.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">CHF <br> Switzerland Franc</p>
+            </div>
+          </li>
+          <li class="currency-from" id="SYP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/sy.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">SYP <br> Syria Pound</p>
+            </div>
+          </li>
+          <li class="currency-from" id="TWD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/tw.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">TWD <br> Taiwan New Dollar</p>
+            </div>
+          </li>
+          <li class="currency-from" id="THB">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/th.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">THB <br> Thailand Baht</p>
+            </div>
+          </li>
+          <li class="currency-from" id="TRY">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/tr.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">TRY <br> Turkey Lira</p>
+            </div>
+          </li>
+          <li class="currency-from" id="UAH">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ua.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">UAH <br> Ukraine Hryvna</p>
+            </div>
+          </li>
+          <li class="currency-from" id="GBP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/gb.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">GBP <br> United Kingdom Pound</p>
+            </div>
+          </li>
+          <li class="currency-from" id="UZS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/uz.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">UZS <br> Uzbekistan Som</p>
+            </div>
+          </li>
+          <li class="currency-from" id="VEF">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ve.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">VEF <br> Venezuela Bolivar Fuerte</p>
+            </div>
+          </li>
+          <li class="currency-from" id="VEF">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/vn.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">VEF <br> VietNam Dong</p>
+            </div>
+          </li>
+          <li class="currency-from" id="YER">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ye.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">YER <br> Yemen Rial</p>
+            </div>
+          </li>
+          <li class="currency-from" id="ZWD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/zw.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ZWD <br> Zimbabwe Dollar</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reverse-btn">
+        <img id="exchange-icon" src="images/arrow-left-right.png">
+      </div>
+
+      <div class="select-to-block custom-select">
+        <label for="label-to">To</label>
+        <div class="select-label" id="label-to">
+          <p class="label">Select Currency</p>
+        </div>
+        <ul class="currencies to">
+
+          <div class="search-box">
+            <input id="search-to" type="text" placeholder="Search Currency...">
+          </div>
+
+          <li class="currency-to" id="AFN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/af.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AFN <br> Afghanistan Afghani</p>
+            </div>
+          </li>
+          <li class="currency-to" id="USD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/us.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">USD <br> US Dollar</p>
+            </div>
+          </li>
+          <li class="currency-to" id="ALL">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/al.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ALL <br> Albanian lek</p>
+            </div>
+          </li>
+          <li class="currency-to" id="ARS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ar.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ARS <br> Agentina Peso</p>
+            </div>
+          </li>
+          <li class="currency-to" id="AUD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/au.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AUD <br> Australia Dollar</p>
+            </div>
+          </li>
+          <li class="currency-to" id="AZN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/az.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AZN <br> Azerbaijan Manat</p>
+            </div>
+          </li>
+          <li class="currency-to" id="AWG">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/aw.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AWG <br> Aruba Guilder</p>
+            </div>
+          </li>
+          <li class="currency-to" id="AZN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/az.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">AZN <br> Azerbaijan Manat</p>
+            </div>
+          </li>
+          <li class="currency-to" id="BRL">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/br.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">BRL <br> Brazil Real</p>
+            </div>
+          </li>
+          <li class="currency-to" id="BGN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/bg.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">BGN <br> Bulgaria Lev</p>
+            </div>
+          </li>
+          <li class="currency-to" id="KHR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kh.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KHR <br> Cambodia Riel</p>
+            </div>
+          </li>
+          <li class="currency-to" id="CAD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ca.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KAD <br> Canada Dollar</p>
+            </div>
+          </li>
+          <li class="currency-to" id="CNY">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/cn.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">CNY <br> Yuan Renminbi</p>
+            </div>
+          </li>
+          <li class="currency-to" id="COP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kh.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">COP <br> Colombia Peso</p>
+            </div>
+          </li>
+          <li class="currency-to" id="DKK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/dk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">DKK <br> Denmark Krone</p>
+            </div>
+          </li>
+          <li class="currency-to" id="EGP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/eg.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">EGP <br> Egypt Pound</p>
+            </div>
+          </li>
+          <li class="currency-to" id="EEK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ee.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">EEK <br> Estonia Kroon</p>
+            </div>
+          </li>
+          <li class="currency-to" id="EUR">
+            <div class="img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">EUR <br> Euro Member</p>
+            </div>
+          </li>
+          <li class="currency-to" id="FKP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/fk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">FKP <br> Falkland Islands Pound</p>
+            </div>
+          </li>
+          <li class="currency-to" id="GEL">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ge.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">GEL <br> Georgia Lari</p>
+            </div>
+          </li>
+          <li class="currency-to" id="GTG">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/gt.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">GTQ <br> Guatemala Quetzal</p>
+            </div>
+          </li>
+          <li class="currency-to" id="GGP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/gg.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">GGP <br> Guernsey Pound</p>
+            </div>
+          </li>
+          <li class="currency-to" id="HKD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/hk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">HKD <br> Hong Kong Dollar</p>
+            </div>
+          </li>
+          <li class="currency-to" id="HUF">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/hu.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">HUF <br> Hungary Forint</p>
+            </div>
+          </li>
+          <li class="currency-to" id="ISK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/is.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ISK <br> Iceland Krona</p>
+            </div>
+          </li>
+          <li class="currency-to" id="INR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/in.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">INR <br> India Rupee</p>
+            </div>
+          </li>
+          <li class="currency-to" id="IDR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/id.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">IDR <br> Indonesia Rupiah</p>
+            </div>
+          </li>
+          <li class="currency-to" id="IRR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ir.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">IRR <br> Iran Rial</p>
+            </div>
+          </li>
+          <li class="currency-to" id="ILS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/il.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ILS <br> Israel Shekel</p>
+            </div>
+          </li>
+          <li class="currency-to" id="JPY">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/jp.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">JPY <br> Japan Yen</p>
+            </div>
+          </li>
+          <li class="currency-to" id="KZT">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kz.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KZT <br> Kazakhstan Tenge</p>
+            </div>
+          </li>
+          <li class="currency-to" id="KPW">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kr.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KPW <br> Korea(North/South) Won</p>
+            </div>
+          </li>
+          <li class="currency-to" id="KGS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/kg.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">KGS <br> Kyrgyzstan</p>
+            </div>
+          </li>
+          <li class="currency-to" id="LBP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/lb.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">LBP <br> Lebanon Pound</p>
+            </div>
+          </li>
+          <li class="currency-to" id="MYR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/my.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">MYR <br> Malaysia Ringgit</p>
+            </div>
+          </li>
+          <li class="currency-to" id="MXN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/mx.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">MXN <br> Mexico Peso</p>
+            </div>
+          </li>
+          <li class="currency-to" id="MNT">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/mn.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">MNT <br> Mongolia Tughrik</p>
+            </div>
+          </li>
+          <li class="currency-to" id="NPR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/np.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">NPR <br> Nepal Rupee</p>
+            </div>
+          </li>
+          <li class="currency-to" id="NZD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/nz.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">NZD <br> New Zealand Dollar</p>
+            </div>
+          </li>
+          <li class="currency-to" id="NGN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ng.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">NGN <br> Nigeria Naira</p>
+            </div>
+          </li>
+          <li class="currency-to" id="NOK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/no.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">NOK <br> Norway Krone</p>
+            </div>
+          </li>
+          <li class="currency-to" id="OMR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/om.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">OMR <br> Oman Rial</p>
+            </div>
+          </li>
+          <li class="currency-to" id="PKR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/pk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">PKR <br> Pakistan Rupee</p>
+            </div>
+          </li>
+          <li class="currency-to" id="PAB">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/pa.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">PAB <br> Panama Balboa</p>
+            </div>
+          </li>
+          <li class="currency-to" id="PHP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ph.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">PHP <br> Philippines Peso</p>
+            </div>
+          </li>
+          <li class="currency-to" id="PLN">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/pl.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">PLN <br> Poland Zloty</p>
+            </div>
+          </li>
+          <li class="currency-to" id="QAR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/qa.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">QAR <br> Qatar Riyal</p>
+            </div>
+          </li>
+          <li class="currency-to" id="RON">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ro.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">RON <br> Romania New Leu</p>
+            </div>
+          </li>
+          <li class="currency-to" id="RUB">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ru.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">RUB <br> Russia Buble</p>
+            </div>
+          </li>
+          <li class="currency-to" id="SAR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/sa.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">SAR <br> Saudi Arabia Riyal</p>
+            </div>
+          </li>
+          <li class="currency-to" id="RSD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/rs.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">RSD <br> Serbia Dinar</p>
+            </div>
+          </li>
+          <li class="currency-to" id="SOS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/so.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">SOS <br> Somalia Shilling</p>
+            </div>
+          </li>
+          <li class="currency-to" id="ZAR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/za.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ZAR <br> South Africa Rand</p>
+            </div>
+          </li>
+          <li class="currency-to" id="LKR">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/lk.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">LKR <br> Sri Lanka Rupee</p>
+            </div>
+          </li>
+          <li class="currency-to" id="SEK">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/se.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">SEK <br> Sweden Krona</p>
+            </div>
+          </li>
+          <li class="currency-to" id="CHF">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ch.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">CHF <br> Switzerland Franc</p>
+            </div>
+          </li>
+          <li class="currency-to" id="SYP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/sy.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">SYP <br> Syria Pound</p>
+            </div>
+          </li>
+          <li class="currency-to" id="TWD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/tw.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">TWD <br> Taiwan New Dollar</p>
+            </div>
+          </li>
+          <li class="currency-to" id="THB">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/th.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">THB <br> Thailand Baht</p>
+            </div>
+          </li>
+          <li class="currency-to" id="TRY">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/tr.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">TRY <br> Turkey Lira</p>
+            </div>
+          </li>
+          <li class="currency-to" id="UAH">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ua.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">UAH <br> Ukraine Hryvna</p>
+            </div>
+          </li>
+          <li class="currency-to" id="GBP">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/gb.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">GBP <br> United Kingdom Pound</p>
+            </div>
+          </li>
+          <li class="currency-to" id="UZS">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/uz.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">UZS <br> Uzbekistan Som</p>
+            </div>
+          </li>
+          <li class="currency-to" id="VEF">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ve.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">VEF <br> Venezuela Bolivar Fuerte</p>
+            </div>
+          </li>
+          <li class="currency-to" id="VEF">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/vn.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">VEF <br> VietNam Dong</p>
+            </div>
+          </li>
+          <li class="currency-to" id="YER">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/ye.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">YER <br> Yemen Rial</p>
+            </div>
+          </li>
+          <li class="currency-to" id="ZWD">
+            <div class="img">
+              <img src="https://flagpedia.net/data/flags/w580/zw.png" class="flag">
+            </div>
+            <div class="info">
+              <p class="currency-name">ZWD <br> Zimbabwe Dollar</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="input-amount">
+        <label for="amount">Amount</label>
+        <input type="number" id="input-amount" placeholder="$">
+      </div>
+
+      <div class="btn-converter">
+        <button id="btn">CONVERT</button>
+      </div>
+    </div>
+    <div id="output">
+      <p class="result-output">
+        <span id="result-left"></span>
+        <span id="result-right"></span>
+        <span id="second-result-right"></span>
+      </p>
+      <p class="details-output">
+        <span id="detail-left"></span>
+        <span id="detail-right"></span>
+        <span id="second-detail-right"></span>
+      </p>
+    </div>
+    <div id="date">
+      <p>
+        <span id="update-info"></span>
+        <span id="last-update"></span>
+      </p>
+    </div>
+  </div>
+
+  <!-- forex api key -->
+  <!-- YzlTT9w7OLxftKUiTXju -->
+  <!-- https://fcsapi.com/api-v3/forex/latest?symbol=USD/AFN&access_key=YzlTT9w7OLxftKUiTXju -->
+  <script src="app.js"></script>
+</body>
+
+</html>

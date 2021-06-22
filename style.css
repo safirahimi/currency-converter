@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("images/currency-background-img.jpg");
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  position: relative;
+  bottom: 100px;
+  width: 1000px;
+  min-height: 300px;
+  margin: 30px auto 0 auto;
+  border-radius: 10px;
+  background: #ebebeb;
+  box-shadow: 5px 7px 15px 3px rgb(33, 33, 33);
+}
+
+header h1 {
+  padding-top: 30px;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.input-amount {
+  width: 200px;
+  margin-left: 10px;
+}
+
+#input-amount {
+  width: 100%;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 30px;
+  padding: 0 10px;
+  outline: none;
+  background: #ebebeb;
+  border: none;
+  /* border: 1px solid #d3d3d3; */
+  box-shadow: inset 2px 2px 10px 1px rgb(157, 155, 155);
+}
+
+label {
+  display: block;
+  font-size: 30px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.select-label {
+  width: 250px;
+  height: 60px;
+  margin-bottom: 5px;
+  padding: 1px 0 0 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  box-shadow: 1px 2px 5px 1px rgb(157, 155, 155);
+}
+
+.select-label .label {
+  padding-top: 13px;
+}
+
+.select-label:hover,
+ul li:hover {
+  background: #bbbaba;
+}
+
+.select-label .flag {
+  width: 50px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+}
+
+.select-label .info {
+  margin: 10px 0 0 10px;
+  font-size: 1rem;
+}
+
+.select-label::after {
+  content: "";
+  background: url("images/arrow-up-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 34px;
+  right: 10px;
+  top: 12px;
+  transition: all 0.4s;
+}
+
+ul li {
+  list-style: none;
+  padding: 0 5px 5px 5px;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+}
+
+ul li .flag {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.img {
+  margin-top: 11px;
+  width: 50px;
+  height: 35px;
+}
+
+ul li .info {
+  margin: 10px 0 0 10px;
+  font-size: 1rem;
+}
+
+.currencies {
+  width: 250px;
+  border-radius: 5px;
+  background: #ebebeb;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  border-radius: 8px;
+  box-shadow: 2px 3px 10px rgb(33, 33, 33);
+}
+
+.currencies.active {
+  display: block;
+  max-height: 220px;
+  overflow-y: scroll;
+}
+
+.currencies::-webkit-scrollbar {
+  border-radius: 0 8px 8px 0;
+  background: #fff;
+}
+
+.currencies::-webkit-scrollbar-thumb {
+  background: rgb(218, 226, 242);
+  border-radius: 0 8px 0 0;
+}
+
+.reverse-btn {
+  width: 40px;
+  height: 40px;
+  margin: 53px 10px 0 10px;
+  text-align: center;
+}
+
+.reverse-btn img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-converter {
+  margin: 45px 0 0 10px;
+}
+
+.btn-converter button {
+  font-size: 30px;
+  padding: 12px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ebebeb;
+  border: none;
+  /* outline: none; */
+  outline-color: cadetblue;
+  box-shadow: 1px 2px 5px 1px rgb(157, 155, 155);
+}
+
+.btn-converter button:hover {
+  background: #bfbfbf;
+}
+
+#output {
+  margin: 30px 0 0 30px;
+  padding-bottom: 20px;
+}
+
+.result-output {
+  font-size: 2.5rem;
+}
+
+.details-output {
+  font-size: 1.5rem;
+}
+
+#result-right,
+#detail-right {
+  color: rgba(0, 128, 0, 0.878);
+}
+
+.search-box input {
+  max-width: 232px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 0;
+  font-size: 1.1rem;
+  outline: none;
+  position: fixed;
+}
+
+.search-box {
+  max-width: 232px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+#date {
+  padding: 0 20px 40px 0;
+}
+
+#date p {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#last-update {
+  font-weight: normal;
+}
